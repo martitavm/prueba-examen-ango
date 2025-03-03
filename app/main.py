@@ -49,3 +49,7 @@ def update_user(user_id: int, user_update: schemas.UserUpdate, db: Session = Dep
     if not updated_user:
         raise HTTPException(status_code=404, detail="User not found")
     return updated_user
+
+
+
+
